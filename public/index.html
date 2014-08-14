@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=320, initial-scale=1.0, user-scalable=no">
+		<title>ChatServer</title>
+		<link rel="stylesheet" href="style.css">
+		<script src="modernizr-2.7.2.js"></script>
+		<script src="q.js"></script>
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<input id="user" class="inputText" type="text" value="Invité" onblur="onChangeUser(event)" onkeyup="onChangeUserKey(event)"/>
+		<input id="chatRoom" class="inputText" type="text" value="Générale" onblur="onChatRoom(event)" onkeyup="onChatRoomKey(event)"/>
+		<textarea id="output" readonly="true" wrap="hard"></textarea>
+		<input id="message" class="inputText" type="text" onkeyup="onSendMessage(event)" />
+		<textarea id="userList" readonly="true" wrap="hard"></textarea>
+	</body>
+</html>
